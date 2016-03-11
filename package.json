@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/rko2/frontend-nanodegree-mobile-portfolio/issues"
   },
-  "homepage": "https://github.com/rko2/frontend-nanodegree-mobile-portfolio#readme"
+  "homepage": "https://github.com/rko2/frontend-nanodegree-mobile-portfolio#readme",
+  "devDependencies": {
+    "grunt-responsive-images": "^0.1.7"
+  }
 }
