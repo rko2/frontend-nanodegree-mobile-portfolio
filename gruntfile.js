@@ -20,12 +20,12 @@ module.exports = function(grunt) {
 
     mkdir: {
       all: {
-      options: {
-        create: ['dist/img']
+        options: {
+          create: ['dist/img']
+        },
       },
     },
-  },
-});
+  });
 
   grunt.registerTask('default', [
 		'responsive_images',
