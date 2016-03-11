@@ -9,11 +9,12 @@ module.exports = function(grunt) {
       files: [{
         expand: true,
         src: ['*.{gif,jpg,png}'],
-        cwd: 'src/img',
-        dest: 'dist/img'
+        cwd: 'src/img/',
+        dest: 'dist/img/'
       }]
     }
-  })
+  });
+  
   grunt.registerTask('default', [
 		'responsive_images'
 	]);
