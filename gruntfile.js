@@ -4,7 +4,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     responsive_images: {
       options: {
-        engine: im;
+        engine: 'im'
       },
       files: [{
         expand: true,
@@ -14,4 +14,8 @@ module.exports = function(grunt) {
       }]
     }
   })
+  grunt.registerTask('default', [
+		'responsive_images'
+	]);
+
 }
