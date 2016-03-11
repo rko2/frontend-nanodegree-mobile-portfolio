@@ -1,22 +1,35 @@
 module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-responsive-images');
+  grunt.loadNpmTasks('grunt-mkdir');
 
   grunt.initConfig({
+
     responsive_images: {
-      options: {
-        engine: 'im'
+      all: {
+        options: {
+          engine: 'im',
+          },
+          files: [{
+            expand: true,
+            src: ['*.{gif,jpg,png}'],
+            cwd: 'src/img',
+            dest: 'dist/img'
+          }]
+        }
       },
-      files: [{
-        expand: true,
-        src: ['*.{gif,jpg,png}'],
-        cwd: 'src/img/',
-        dest: 'dist/img/'
-      }]
-    }
-  });
-  
+
+    mkdir: {
+      all: {
+      options: {
+        create: ['dist/img']
+      },
+    },
+  },
+});
+
   grunt.registerTask('default', [
-		'responsive_images'
+		'responsive_images',
+    'mkdir'
 	]);
 
 }
