@@ -17,6 +17,11 @@ module.exports = function(grunt) {
         files: {
           'dist/js/perfmatters.js' : 'dist/js/perfmatters.js'
         }
+      },
+      views: {
+        files: {
+          'dist/views/js/main.js' : 'dist/views/js/main.js'
+        }
       }
     }
   });
