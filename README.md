@@ -24,3 +24,7 @@
 
 ## PageSpeed Insights
 * Run PageSpeed Insights on http://rko2.github.io/frontend-nanodegree-mobile-portfolio/dist/
+
+## Key References
+* Udacity class discussion forum https://discussions.udacity.com/t/optimising-updatepositions-why-are-my-pizzas-clumped-together/40333
+* And https://discussions.udacity.com/t/how-to-optimize-css-and-google-fonts/26997
