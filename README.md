@@ -21,3 +21,6 @@
 ##Other
 * Fix main.js according to jshint
 * style.css was inlined because at the time I believed the goal was to get also achieve 90 pagespeed score with pizza.html.
+
+## PageSpeed Insights
+* Run PageSpeed Insights on http://rko2.github.io/frontend-nanodegree-mobile-portfolio/dist/
