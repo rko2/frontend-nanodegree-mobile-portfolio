@@ -538,7 +538,9 @@ var movingPizzas = document.getElementById('movingPizzas1');
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  for (var i = 0; i < 200; i++) {
+  var rows = window.screen.height/s; // Calculates how many rows of pizzas to generate based on the screen height.
+  var pizzaNumber = Math.floor(rows * cols); // Determines how many pizzas to generate based on rows * columns.
+  for (var i = 0; i < pizzaNumber; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";

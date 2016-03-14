@@ -20,8 +20,9 @@
 * Change queryselector to getElementbyId where found
 * Move getElementById out of for loop in event listener
 * Save items.length in local variable to prevent continuous reacccessing in for loop in updatePositions function
-* Move pizzasDiv outside of for loop, as it doesn't rely on the loop.
-* Declare phase outside of for loop so it isn't created every time the loop is executed.
+* Move pizzasDiv outside of for loop, as it doesn't rely on the loop
+* Declare phase outside of for loop so it isn't created every time the loop is executed
+* Use window.screen.height to dynamically determine how many rows of sliding pizzas and the number of pizzas to generate
 
 ##Other
 * Fix main.js according to jshint
