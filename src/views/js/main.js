@@ -529,7 +529,7 @@ window.addEventListener('scroll', updatePositions);
 
 // Generates the sliding pizzas when the page loads.
 // Replaced basicLeft with style.left, since basicLeft is now meaningless.
-// queryselector was changed to getElementbyId to improve speed.
+// queryselector was changed to getElementbyId to improve speed, and that was removed from the for loop for the same reason.
 var movingPizzas = document.getElementById('movingPizzas1');
 
 document.addEventListener('DOMContentLoaded', function() {
