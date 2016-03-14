@@ -17,6 +17,8 @@
 * In event listener for pizza generation change basicLeft to style.left to set default position (basicLeft becomes useless with previous change)
 * Move items outside of updatePositions function and change queryselectors to getElementbyClassName
 * Create array of constant variables originally in updatePositions to eliminate need for continous recalculation in loop
+* Change queryselector to getElementbyId where found
+* Move getElementById out of for loop in event listener
 
 ##Other
 * Fix main.js according to jshint
