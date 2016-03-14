@@ -496,12 +496,13 @@ function updatePositions() {
   frame++;
   var scrollTop = document.body.scrollTop;
   var phasearray = [];
+  var length = items.length; // save items.length in local variable to prevent continuous reacccessing in for loop
   window.performance.mark("mark_start_frame");
 
   for (var i = 0; i < 5; i++) {
     phasearray.push(Math.sin((scrollTop/1250) + i));
   }
-  for (var j = 0; j < items.length; j++) {
+  for (var j = 0; j < length; j++) {
     var phase = phasearray[j%5];
     //items[i].style.left = items[i].basicLeft + 100 * phase + 'px'
     items[j].style.transform = 'translateX(' + 100 * phase + 'px)';

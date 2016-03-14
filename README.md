@@ -19,6 +19,7 @@
 * Create array of constant variables originally in updatePositions to eliminate need for continous recalculation in loop
 * Change queryselector to getElementbyId where found
 * Move getElementById out of for loop in event listener
+* Save items.length in local variable to prevent continuous reacccessing in for loop in updatePositions function
 
 ##Other
 * Fix main.js according to jshint
