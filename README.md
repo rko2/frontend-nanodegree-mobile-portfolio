@@ -20,6 +20,7 @@
 * Change queryselector to getElementbyId where found
 * Move getElementById out of for loop in event listener
 * Save items.length in local variable to prevent continuous reacccessing in for loop in updatePositions function
+* Move pizzasDiv outside of for loop, as it doesn't rely on the loop.
 
 ##Other
 * Fix main.js according to jshint
