@@ -497,6 +497,7 @@ function updatePositions() {
   frame++;
   var scrollTop = document.body.scrollTop;
   var phasearray = [];
+  var phase; // declare phase outside of for loop
   var length = items.length; // save items.length in local variable to prevent continuous reacccessing in for loop
   window.performance.mark("mark_start_frame");
 
